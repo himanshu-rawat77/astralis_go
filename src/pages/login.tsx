@@ -39,11 +39,11 @@ export function LoginContent() {
     }
   }, [user, navigate]);
 
-  useEffect(() => {
-    if (user.authStatus === "authenticated") {
-      navigate("/explore");
-    }
-  }, [user.authStatus, navigate]);
+  // useEffect(() => {
+  //   if (user.authStatus === "authenticated") {
+  //     navigate("/explore");
+  //   }
+  // }, [user.authStatus, navigate]);
 
   useEffect(() => {
     const handleUserAuthentication = async () => {
@@ -67,14 +67,15 @@ export function LoginContent() {
               // Even if there's an error, we'll continue with the loading animation
             }
           } else {
+            setAuthState("loading");
             console.log("User already has wallet");
           }
 
           // Always redirect after 2 seconds of showing the loader
           setTimeout(() => {
             navigate("/explore");
-          }, 2000);
-        }, 500); // Small delay before showing loader
+          }, 5000);
+        }, 0); // Small delay before showing loader
       }
     };
 

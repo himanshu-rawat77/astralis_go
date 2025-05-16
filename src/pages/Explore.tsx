@@ -77,7 +77,7 @@ export default function Explore() {
   }, []);
 
   useEffect(() => {
-    if (user.authStatus === "authenticating") {
+    if (!user.user) {
       navigate("/login");
     }
   }, []);
