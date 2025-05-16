@@ -1,0 +1,35 @@
+{
+  "name": "India Gate NFT",
+  "description": "A unique NFT representing your visit to India Gate, Delhi",
+  "image": "https://raw.githubusercontent.com/himanshu-rawat77/NFT-Go-main/main/public/india-gate.png",
+  "attributes": [
+    {
+      "trait_type": "Location",
+      "value": "India Gate"
+    },
+    {
+      "trait_type": "City",
+      "value": "Delhi"
+    },
+    {
+      "trait_type": "Country",
+      "value": "India"
+    },
+    {
+      "trait_type": "Latitude",
+      "value": "28.612894"
+    },
+    {
+      "trait_type": "Longitude",
+      "value": "77.229446"
+    },
+    {
+      "trait_type": "Collection",
+      "value": "Delhi Landmarks"
+    },
+    {
+      "trait_type": "Series",
+      "value": "Historical Monuments"
+    }
+  ]
+} 
